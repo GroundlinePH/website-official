@@ -1,54 +1,4 @@
-![](https://i.imgur.com/hWB1XRO.png)
-
-# Gatsby Starter Portfolio: Cara
-
-A portfolio starter for [Gatsby](https://www.gatsbyjs.org/). The target audience are designers and photographers.
-
-[Demo Website](https://cara.lekoarts.de)
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LeKoArts/gatsby-starter-portfolio-cara) [![Edit gatsby-starter-portfolio-cara](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/LeKoArts/gatsby-starter-portfolio-cara/tree/master/)
-
-[![CircleCI](https://circleci.com/gh/LekoArts/gatsby-starter-portfolio-cara.svg?style=svg)](https://circleci.com/gh/LekoArts/gatsby-starter-portfolio-cara) [![Netlify Status](https://api.netlify.com/api/v1/badges/88bbaef1-6f83-4894-8acd-e6512ff39265/deploy-status)](https://app.netlify.com/sites/portfolio-cara/deploys)
-
-- TailwindCSS & styled-components
-- React Spring
-- Playful & Colorful One-Page website with Parallax effect
-
-Thanks to [@bradlc](https://github.com/bradlc)’s work on [babel-plugin-tailwind-components](https://github.com/bradlc/babel-plugin-tailwind-components), we can easily get the power of Tailwind without the stylesheet bloat by passing Tailwind classes into styled-components with **Babel macros** 🎉.
-
-## Why?
-
-If you want to quickly bootstrap a design/photography portfolio or use it as a foundation for your personal site, the starters in _gatsby-starter-portfolio_ are a perfect fit for you! The project's goal is to offer minimalistic and fast websites.
-
-I hope you like my starters and create something awesome! To see some of my work, you can visit my [website](https://www.lekoarts.de) or support me on [Patreon](https://www.patreon.com/lekoarts) to get some neat rewards (4K images, project files, tutorial insights). Every pledge on Patreon helps me create more free starters!
-
-Also, check out the other themes for _gatsby-starter-portfolio_:
-
-- [gatsby-starter-portfolio-emma](https://github.com/LekoArts/gatsby-starter-portfolio-emma)
-- [gatsby-starter-portfolio-emilia](https://github.com/LekoArts/gatsby-starter-portfolio-emilia)
-- [gatsby-starter-portfolio-bella](https://github.com/LekoArts/gatsby-starter-portfolio-bella)
-
-Check out the [Gatsby Starter Portfolio Overview](https://gatsby-starter-portfolio.netlify.com/)!
-
-## Features
-
-- [React Spring](https://github.com/drcmda/react-spring) (Used for Parallax effect)
-- [TailwindCSS](https://tailwindcss.com/) & [styled-components](https://www.styled-components.com/) for styling
-  - Use the full power of TailwindCSS while generating small styles (as unused data gets deleted)
-  - Uses `tailwind.macro` (Babel macro) to have hot-reloading of Tailwind styles
-- SEO
-  - Schema.org JSONLD
-  - OpenGraph Tags
-  - Twitter Tags
-- [Typefaces](https://github.com/KyleAMathews/typefaces) for quicker font loading
-- Offline Support
-- WebApp Manifest Support
-- Responsive images
-  - The right image size for every screen size
-  - Traced SVG Loading (Lazy-Loading)
-  - WebP Support
-
-**Please note:** The parallax effect can be quite heavy for some older CPUs and the site uses some newer CSS features which will result in incompatibility with older browsers.
+# Groundline PH Official Website
 
 ## Getting Started
 
@@ -60,7 +10,7 @@ Check your development environment! You'll need [Node.js](https://nodejs.org/en/
 To copy and install this starter run this command (with "project-name" being the name of your folder you wish to install it in):
 
 ```
-gatsby new project-name https://github.com/LekoArts/gatsby-starter-portfolio-cara
+gatsby new project-name https://github.com/GroundlinePH/website-official
 cd project-name
 npm run dev
 ```
@@ -87,20 +37,21 @@ You have multiple options to configure this project.
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "/portfolio"
 
-  siteTitle: 'Cara - Gatsby Starter Portfolio', // Navigation and Site Title
-  siteTitleAlt: 'Cara', // Alternative Site title for SEO
-  siteTitleShort: 'Cara', // short_name for manifest
-  siteHeadline: 'Creating marvelous art & blazginly fast websites', // Headline for schema.org JSONLD
-  siteUrl: 'https://cara.lekoarts.de', // Domain of your site. No trailing slash!
+  siteTitle: 'Groundline', // Navigation and Site Title
+  siteTitleAlt: 'Groundline Software Solutions', // Alternative Site title for SEO
+  siteTitleShort: 'Groundline', // short_name for manifest
+  siteHeadline: 'We thrive when coming up with innovative ideas.', // Headline for schema.org JSONLD
+  siteUrl: 'https://groundline.ph', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logo.png', // Used for SEO and manifest
-  siteDescription: 'Playful & Colorful One-Page website with Parallax effect',
-  author: 'LekoArts', // Author for schema.org JSONLD
+  siteDescription: 'An innovative digital team focused on custom-tailored web and mobile solutions.',
+  author: 'Groundline.ph', // Author for schema.org JSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@cara', // Twitter Username
-  ogSiteName: 'cara', // Facebook Site Name
+  userTwitter: '@aizer', // Twitter Username
+  ogSiteName: 'groundline', // Facebook Site Name
   ogLanguage: 'en_US', // Facebook Language
+  googleAnalyticsID: 'UA-47519312-5UA-68933231-1',
 
   // Manifest and Progress color
   themeColor: tailwind.colors.orange,
