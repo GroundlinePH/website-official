@@ -1,95 +1,74 @@
-# Groundline PH Official Website
+# gatsby-starter-stylish
 
-## Getting Started
+Gatsby.js V2 starter template based on Stylish Portfolio by startbootstrap
 
-Check your development environment! You'll need [Node.js](https://nodejs.org/en/), the [Gatsby CLI](https://www.gatsbyjs.org/docs/) and [node-gyp](https://github.com/nodejs/node-gyp#installation) installed. The official Gatsby website also lists two articles regarding this topic:
+For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
 
-- [Gatsby on Windows](https://www.gatsbyjs.org/docs/gatsby-on-windows/)
-- [Check your development environment](https://www.gatsbyjs.org/tutorial/part-zero/)
+Check online preview [here](https://anubhavsrivastava.github.io/gatsby-starter-stylish/)
 
-To copy and install this starter run this command (with "project-name" being the name of your folder you wish to install it in):
+## Screenshot
 
-```
-gatsby new project-name https://github.com/GroundlinePH/website-official
-cd project-name
-npm run dev
-```
+![Screenshot](./src/assets/img/demo.png)
 
-### Adding new features/plugins
+## Install
 
-You can add other features by having a look at the official [plugins page](https://www.gatsbyjs.org/docs/plugins/).
+Make sure that you have the Gatsby CLI program installed:
 
-### Building your site
-
-```
-npm run build
+```sh
+npm install --global gatsby-cli
 ```
 
-Copy the content of the `public` folder to your webhost or use a website like Netlify which automates that for you.
+And run from your CLI:
 
-## Configuration
+```sh
+gatsby new <site-name> https://github.com/anubhavsrivastava/gatsby-starter-stylish
+```
 
-You have multiple options to configure this project.
+Then you can run it by:
 
-1. Use the `config/website.js` to configure data passed to the SEO component and other parts of the Gatsby site:
+```sh
+cd gatsby-example-site
+npm install
+gatsby develop
+```
 
-```JS
+### Personalization
+
+Edit `config.js` to put up your details
+
+```javascript
 module.exports = {
-  pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "/portfolio"
+  siteTitle: 'Gatsby Starter stylish', // <title>
+  ...
+  firstName: 'Anubhav',
+  lastName: 'Srivastava',
+  // social
+  socialLinks: [
+    {
+      icon: 'fa-github',
+      name: 'Github',
+      url: 'https://github.com/anubhavsrivastava',
+    }
+    ...
+  ],
+};
 
-  siteTitle: 'Groundline', // Navigation and Site Title
-  siteTitleAlt: 'Groundline Software Solutions', // Alternative Site title for SEO
-  siteTitleShort: 'Groundline', // short_name for manifest
-  siteHeadline: 'We thrive when coming up with innovative ideas.', // Headline for schema.org JSONLD
-  siteUrl: 'https://groundline.ph', // Domain of your site. No trailing slash!
-  siteLanguage: 'en', // Language Tag on <html> element
-  siteLogo: '/logo.png', // Used for SEO and manifest
-  siteDescription: 'An innovative digital team focused on custom-tailored web and mobile solutions.',
-  author: 'Groundline.ph', // Author for schema.org JSONLD
-
-  // siteFBAppID: '123456789', // Facebook App ID - Optional
-  userTwitter: '@aizer', // Twitter Username
-  ogSiteName: 'groundline', // Facebook Site Name
-  ogLanguage: 'en_US', // Facebook Language
-  googleAnalyticsID: 'UA-47519312-5UA-68933231-1',
-
-  // Manifest and Progress color
-  themeColor: tailwind.colors.orange,
-  backgroundColor: tailwind.colors.blue,
-}
 ```
 
-2. Use the `tailwind.js` file to configure TailwindCSS. Their [documentation](https://tailwindcss.com/docs/configuration) explains it step-by-step.
+### Deploying using Github page
 
-3. Modify the files in the `src/styles` directory.
+`package.json` has a default script that uses `gh-pages` module to publish on Github pages. Simply running `npm run deploy` would publish the site on github pages.
 
-4. Modify the sections in the `src/views` directory. They contain the Dividers & SVG icons.
+Additionally, it also has [path-prefix](https://www.gatsbyjs.org/docs/path-prefix/) value set for gatsby config in `config.js`. Change `pathPrefix` to relevant path if your gatsby site is hosted on subpath of a domain, `https://theanubhav.com/somePath/`. If you are hosting it as root site, i.e, `https://theanubhav.com/` , remove the pathPrefix configuration.
 
-5. You can also place the icons somewhere else on the page, modify their animation and hide them on smaller screens:
+### Contribution
 
-```JSX
-  <SVG icon="triangle" hideMobile width={48} stroke={colors.orange} left="10%" top="20%" />
-  <SVG icon="hexa" width={48} stroke={colors.red} left="60%" top="70%" />
-  <SVG icon="box" width={6} fill={colors['grey-darker']} left="60%" top="15%" />
-```
+Suggestions and PRs are welcome!
 
-- For `icon`, you have the options: `triangle, circle, arrowUp, upDown, box, hexa`
-- If you want the SVG to be hidden on mobile view, add `hideMobile` to the SVG component
-- You can define the width via the TailwindCSS width [option](https://tailwindcss.com/docs/width)
-- The colors get defined via the TailwindCSS color [option](https://tailwindcss.com/docs/colors)
-  - Please note that you will either have to define the color in `stroke` **or** `fill` depending on the icon. For reference, have a look at the currently used SVGs
-- The options `left` and `top` position the icon relatively to its parent container
-- You can also wrap the SVGs with `<UpDown />` or `<UpDownWide />` to animate them
+Please create issue or open PR request for contribution.
 
-### Typography
+### License
 
-Instead of relying on Google's CDN to host its fonts, this site self-hosts the fonts and therefore benefits from increased performance. The installed fonts can be found in `src/components/Layout.jsx`:
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
 
-```JSX
-import 'typeface-cantata-one';
-import 'typeface-open-sans';
-```
-
-This starter uses [typefaces](https://github.com/KyleAMathews/typefaces) by Kyle Mathews. Have a look at the repository if you want to install & use other fonts.
-
-You'll also need to configure `fonts` in `tailwind.js` to reflect the changes. You then can use the fonts with `font-sans` and `font-serif`.
+refer `LICENSE` file in this repository.
