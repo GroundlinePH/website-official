@@ -53,7 +53,7 @@ const IndexPage = () => (
       <div className="overlay"></div>
     </header>
     
-    <section className="content-section bg-light" id="about">
+    <section className="content-section bg-light pt-5" id="about">
       <div className="container text-center">
         <div className="row">
           <div className="col-lg-8 mx-auto">
@@ -71,6 +71,30 @@ const IndexPage = () => (
       </div>
     </section>
 
+    <section className="content-section bg-dark text-light pt-5" id="portfolio">
+      <div className="container text-center">
+        <div className="row">
+          <div className="col-lg-6 mx-auto">
+            <div className="portfolio-item">
+              <span className="caption">
+                <span className="caption-content">
+                  <img src={glio} alt="" />
+                  <span className="portfolio-title">Groundline.io</span>
+                  <h3 className="mb-5 mt-4">
+                  A machine learning driven platform for satellite and aerial images
+                  </h3>
+                  <a  href="https://www.groundline.io/">
+                    <button type="button" class="btn btn-outline-light btn-lg">Check it out</button>
+                  </a>
+                </span>
+              </span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{/*}
     <section className="content-section" id="portfolio">
       <div className="container">
         <div className="content-section-heading text-center">
@@ -82,9 +106,9 @@ const IndexPage = () => (
               <span className="caption">
                 <span className="caption-content">
                   <img src={glio} alt="" />
-                  <span className="portfolio-title">Groundline JS</span>
-                  <p className="mb-0">
-                    Open source framework for visualizing data by connecting cloud platforms and charting libraries.
+                  <span className="portfolio-title">Groundline</span>
+                  <p className="mb-0 mt-4">
+                  A Machine learning driven platform for object detection in aerial images
                   </p>
                 </span>
               </span>
@@ -95,8 +119,8 @@ const IndexPage = () => (
               <span className="caption">
                 <span className="caption-content">
                   <img src={stageflux} alt="" height="60" />
-                  <p className="mb-0">
-                    Coming soon! A Machine learning driven platform for object detection in aerial images
+                  <p className="mb-0 mt-4">
+                    Coming soon! 
                   </p>
                 </span>
               </span>
@@ -105,9 +129,9 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
+*/}
 
-
-    <section className="content-section bg-light" id="about">
+    <section className="content-section bg-light pt-5" id="about">
       <div className="container text-center">
         <div className="row">
           <div className="col-lg-8 mx-auto">

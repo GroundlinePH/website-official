@@ -9,7 +9,7 @@ module.exports = {
   manifestIcon: 'src/assets/images/logo.png',
   pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'groundline',
-  subHeading: 'We thrive when coming up with innovative ideas.',
+  subHeading: 'We thrive when coming up with innovative ideas',
 
   // social
   socialLinks: [
