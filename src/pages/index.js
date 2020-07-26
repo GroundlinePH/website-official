@@ -13,7 +13,7 @@ import b4 from '../assets/images/brands/uob-white.png';
 
 import logo from '../assets/images/logo.png';
 import glio from '../assets/images/brands/gio.png';
-import stageflux from '../assets/images/brands/stageflux.png';
+//import stageflux from '../assets/images/brands/stageflux.png';
 
 const IndexPage = () => (
   <Layout>
