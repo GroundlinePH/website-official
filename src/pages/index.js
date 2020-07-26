@@ -81,7 +81,7 @@ const IndexPage = () => (
                   <img src={glio} alt="" />
                   <span className="portfolio-title">Groundline.io</span>
                   <h3 className="mb-5 mt-4">
-                  A machine learning driven platform for satellite and aerial images
+                  Scalable real-time tracking and monitoring API
                   </h3>
                   <a  href="https://www.groundline.io/">
                     <button type="button" class="btn btn-outline-light btn-lg">Check it out</button>
