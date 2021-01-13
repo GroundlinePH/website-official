@@ -23,10 +23,12 @@
       p {
         font-weight: 300;
         font-size: 1.2rem;
+        color: #333;
       }
       .portfolio-title {
         font-size: 1.5rem;
         padding: 0 10px;
+        color: #333;
       }
     }
     img {
@@ -42,7 +44,7 @@
       clip-path: inset(0px);
       .caption-content {
         transition: opacity 0.25s;
-        margin-left: 3rem;
+       // margin-left: 3rem;
         margin-right: 3rem;
        // margin-bottom: 3rem;
       }

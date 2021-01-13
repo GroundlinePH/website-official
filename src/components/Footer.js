@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="footer text-center">
+    <footer className="footer bg-dark text-light text-left">
       <div className="container">
       {/*
         <ul className="list-inline mb-5">

@@ -3,7 +3,6 @@ import React from 'react';
 import Layout from '../components/Layout';
 
 import config from '../../config';
-import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 
 import b1 from '../assets/images/brands/hgtv-white.png';
@@ -13,7 +12,8 @@ import b4 from '../assets/images/brands/uob-white.png';
 
 import logo from '../assets/images/logo.png';
 import glio from '../assets/images/brands/gio.png';
-//import stageflux from '../assets/images/brands/stageflux.png';
+import clerkflow from '../assets/images/brands/clerkflow.png';
+import stageflux from '../assets/images/brands/stageflux.png';
 
 const IndexPage = () => (
   <Layout>
@@ -27,22 +27,22 @@ const IndexPage = () => (
         </h5>
 
         <div className="row">
-          <div className="col-3 mb-5 mb-lg-0">
+          <div className="col-6 col-lg-3 mb-5 mb-lg-0">
             <span className="rounded-circle mx-auto mb-3">
               <img className="img-fluid" src={b1} alt="" />
             </span>
           </div>
-          <div className="col-3 mb-5 mb-lg-0">
+          <div className="col-6 col-lg-3 mb-5 mb-lg-0">
             <span className="rounded-circle mx-auto mb-3">
               <img className="img-fluid" src={b2} alt="" />
             </span>
           </div>
-          <div className="col-3 mb-5 mb-lg-0">
+          <div className="col-6 col-lg-3 mb-5 mb-lg-0">
             <span className="rounded-circle mx-auto mb-3">
               <img className="img-fluid" src={b3} alt="" />
             </span>
           </div>
-          <div className="col-3 mb-5 mb-lg-0">
+          <div className="col-6 col-lg-3 mb-5 mb-lg-0">
             <span className="rounded-circle mx-auto mb-3">
               <img className="img-fluid" src={b4} alt="" />
             </span>
@@ -54,12 +54,15 @@ const IndexPage = () => (
     </header>
     
     <section className="content-section bg-light pt-5" id="about">
-      <div className="container text-center">
+      <div className="container text-left">
         <div className="row">
-          <div className="col-lg-8 mx-auto">
-            <h2>
+          <div className="col-lg-11 mx-auto">
+            <div className="content-section-heading mb-4 text-left">
+              <h3 >About Us</h3>
+            </div>
+            <h5>
               Groundline is an innovative digital team focused on custom-tailored web and mobile solutions.
-            </h2>
+            </h5>
             <p className="lead mb-5">
                We collaborate with a diverse range of organisation to build the right solutions that enforce 
                brand recognition and intuitive user experience. We act as a strategic partner for businesses 
@@ -70,7 +73,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-
+{/*
     <section className="content-section bg-dark text-light pt-5" id="portfolio">
       <div className="container text-center">
         <div className="row">
@@ -81,7 +84,7 @@ const IndexPage = () => (
                   <img src={glio} alt="" />
                   <span className="portfolio-title">Groundline.io</span>
                   <h3 className="mb-5 mt-4">
-                  Scalable real-time tracking and monitoring API
+                  AI for Geospatial analysis
                   </h3>
                   <a  href="https://www.groundline.io/">
                     <button type="button" class="btn btn-outline-light btn-lg">Check it out</button>
@@ -93,52 +96,85 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
+*/}
 
-{/*}
-    <section className="content-section" id="portfolio">
-      <div className="container">
-        <div className="content-section-heading text-center">
-          <h2 className="mb-5">Products & Frameworks</h2>
-        </div>
-        <div className="row no-gutters">
-          <div className="col-lg-6">
-            <a className="portfolio-item" href="https://www.groundline.io/">
-              <span className="caption">
-                <span className="caption-content">
-                  <img src={glio} alt="" />
-                  <span className="portfolio-title">Groundline</span>
-                  <p className="mb-0 mt-4">
-                  A Machine learning driven platform for object detection in aerial images
-                  </p>
-                </span>
-              </span>
-            </a>
+    <section className="content-section text-dark pt-5" id="portfolio">
+      <div className="container text-left">
+        <div className="row">
+          <div className="col-lg-11 mx-auto">
+            <div className="content-section-heading mb-4 text-left">
+              <h3>Products</h3>
+              <p>Some of the stuff we are working on</p>
+            </div>
           </div>
-          <div className="col-lg-6">
-            <a className="portfolio-item" href="#">
-              <span className="caption">
-                <span className="caption-content">
-                  <img src={stageflux} alt="" height="60" />
-                  <p className="mb-0 mt-4">
-                    Coming soon! 
-                  </p>
-                </span>
-              </span>
-            </a>
+        </div>
+        <div className="row">
+          <div className="col-lg-11 mx-auto">
+          <div className="row no-gutter">
+              <div className="col-lg-4">
+                <a className="portfolio-item" href="https://www.groundline.io" target="_blank" rel="noopener noreferrer">
+                  <span className="caption">
+                    <span className="caption-content">
+                      <img src={glio} alt="" />
+                      <span className="portfolio-title">Groundline.io</span>
+                      <p className="mb-0 mt-4">
+                      A machine learning driven platform for object detection and annotation of geospatial data.
+                      </p>
+                      <br />
+                      <a href="https://www.groundline.io" target="_blank" className="mt-5" rel="noopener noreferrer">
+                        <button type="button" class="btn btn-outline-dark btn-sm">open</button>
+                      </a>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div className="col-lg-4">
+                <a className="portfolio-item" href="https://www.clerkflow.com" target="_blank" rel="noopener noreferrer">
+                  <span className="caption">
+                    <span className="caption-content">
+                      <img src={clerkflow} alt="" height="60" />
+                      <span className="portfolio-title">Clerkflow</span>
+                      <p className="mb-0 mt-4">
+                      Automate data extraction from any documents to improve overall business operations.
+                      </p>
+                      <br />
+                      <a href="https://www.clerkflow.com" target="_blank" className="mt-5" rel="noopener noreferrer">
+                        <button type="button" class="btn btn-outline-dark btn-sm">open</button>
+                      </a>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div className="col-lg-4">
+                <a className="portfolio-item" href="/#">
+                  <span className="caption">
+                    <span className="caption-content">
+                      <img src={stageflux} alt="" height="60" />
+                      <p className="mb-0 mt-4">
+                        Coming soon! We are working on something new here. Will update you as soon we are live.
+                      </p>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-*/}
 
-    <section className="content-section bg-light pt-5" id="about">
-      <div className="container text-center">
+
+    <section className="content-section bg-dark text-light pt-5 pb-5" id="about">
+      <div className="container text-left">
         <div className="row">
-          <div className="col-lg-8 mx-auto">
+          <div className="col-lg-11 mx-auto">
             <h2>
               For questions and collaborations
             </h2>
-            <p className="lead mb-5">Drop us a line at hello@groundline.ph</p>
+            <p className="lead">Drop us a line at hello@groundline.ph</p>
+            <p className="text-muted small mb-0">
+              Copyright &copy; Groundline Software Solutions
+            </p>
           </div>
         </div>
       </div>
@@ -146,7 +182,6 @@ const IndexPage = () => (
 
 
     <ScrollToTop />
-    <Footer />
   </Layout>
 );
 
