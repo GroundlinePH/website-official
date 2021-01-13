@@ -33,7 +33,7 @@ const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
   display: grid;
   grid-gap: 0;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   @media (max-width: 1200px) {
     grid-gap: 0;
   }
@@ -90,7 +90,7 @@ const BrandsWrapper = styled.div`
   clear:both;
 `
 const BrandLogo = styled.img`
-  ${tw`h-14`};
+  min-height: 3.8rem;
 `
 
 const ParticlesWrapper = styled.div`
@@ -114,11 +114,11 @@ const Index = () => (
         <BrandsWrapper>
           <SmallLabel>Some of the brands we've worked with:</SmallLabel>
           <BrandLogo src={HgtvLogo} height="60px" />
-          <BrandLogo src={FNALogo} height="60px" />
           <BrandLogo src={UOBLogo} height="60px" />
           <BrandLogo src={AXALogo} height="60px" />
           <BrandLogo src={SNILogo} height="60px" />
           <BrandLogo src={StarhubLogo} height="60px" />
+          {/*<BrandLogo src={FNALogo} height="75px" />*/}
         </BrandsWrapper>
       </Hero>
       <Projects offset={1}>
@@ -141,13 +141,13 @@ const Index = () => (
           >
             An events registration platform. This project aims to provide flexibility for events organizers (and developers) by giving them the option of choosing there preferred payment gateway, ui frameworks etc.
           </ProjectCard>
-          <ProjectCard
+          {/*<ProjectCard
             link="https://pindero.com"
             bg="#FFF"
             logo={PinderoLogo}
           >
             A freelance developer marketplace. The project aims to help individuals and businesses build affordable and high quality web and mobile applications.
-          </ProjectCard>
+          </ProjectCard>*/}
         </ProjectsWrapper>
         <MediumLabel>For complete list of our protfolio, contact us at hello@groundline.ph</MediumLabel>
       </Projects>

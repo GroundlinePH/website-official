@@ -13,11 +13,13 @@ const Wrapper = styled.a`
 
 const Text = styled.div`
   ${tw`opacity-75 font-sans text-sm md:text-base pt-4`};
+  text-align:left;
   clear:both;
 `
 
 const Title = styled.div`
   ${tw`text-black  text-2xl md:text-2xl xl:text-3xl font-sans`};
+  text-align:left;
 `
 
 const LogoImg = styled.img`
