@@ -151,7 +151,7 @@ const IndexPage = () => (
                     <span className="caption-content">
                       <img src={stageflux} alt="" height="60" />
                       <p className="mb-0 mt-4">
-                        Coming soon! We are working on something new here. Will update you as soon we are live.
+                        Coming soon! We are working on something new here. We will update as soon as we are live.
                       </p>
                     </span>
                   </span>
