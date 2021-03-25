@@ -25,7 +25,7 @@ const IndexPage = () => (
         <h5 className="mb-5">
           {config.subHeading}
         </h5>
-
+{/*
         <div className="row">
           <div className="col-6 col-lg-3 mb-5 mb-lg-0">
             <span className="rounded-circle mx-auto mb-3">
@@ -48,11 +48,11 @@ const IndexPage = () => (
             </span>
           </div>
         </div>
-
+*/}
       </div>     
       <div className="overlay"></div>
     </header>
-    
+    {/*
     <section className="content-section bg-light pt-5" id="about">
       <div className="container text-left">
         <div className="row">
@@ -73,7 +73,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-{/*
+
     <section className="content-section bg-dark text-light pt-5" id="portfolio">
       <div className="container text-center">
         <div className="row">
@@ -96,7 +96,6 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-*/}
 
     <section className="content-section text-dark pt-5" id="portfolio">
       <div className="container text-left">
@@ -180,6 +179,7 @@ const IndexPage = () => (
       </div>
     </section>
 
+*/}
 
     <ScrollToTop />
   </Layout>
