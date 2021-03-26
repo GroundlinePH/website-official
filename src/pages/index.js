@@ -22,10 +22,10 @@ const IndexPage = () => (
     <header className="masthead d-flex">
       <div className="container text-center my-auto">
         <h1 className="mb-1"><img className="logo" src={logo} alt="" />{config.heading}</h1>
-        <h5 className="mb-5">
+ {/*       <h5 className="mb-5">
           {config.subHeading}
         </h5>
-{/*
+
         <div className="row">
           <div className="col-6 col-lg-3 mb-5 mb-lg-0">
             <span className="rounded-circle mx-auto mb-3">
